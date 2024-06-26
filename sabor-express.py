@@ -18,9 +18,6 @@ def close_app():
     os.system('cls')
     print('Até Logo!')
 
-def menu():
-    
-
 if menu_option == 1:
     print('Cadastrar Restaurante')
 elif menu_option == 2:
