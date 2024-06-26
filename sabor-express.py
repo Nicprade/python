@@ -14,6 +14,10 @@ print('4. Sair')
 menu_option = int(input('\nEscolha uma opção: '))
 print(f'Você escolheu a opção {menu_option}')
 
+def close_app():
+    os.system('cls')
+    print('Até Logo!')
+
 if menu_option == 1:
     print('Cadastrar Restaurante')
 elif menu_option == 2:
@@ -21,5 +25,5 @@ elif menu_option == 2:
 elif menu_option == 3:
     print('Ativar Restaurante')
 else:
-    os.system('cls')
-    print('Até Logo!')
+    close_app
+    
