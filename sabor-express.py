@@ -26,4 +26,5 @@ elif menu_option == 3:
     print('Ativar Restaurante')
 else:
     close_app
+    print('teste git')
     
