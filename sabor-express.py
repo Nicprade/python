@@ -16,17 +16,22 @@ def show_menu():
 def choose_option():
     menu_option = int(input('\nEscolha uma opção: '))
     
-    if menu_option == 1:
-        os.system('cls')
-        print('Cadastrar Restaurante')
-    elif menu_option == 2:
-        os.system('cls')
-        print('Listar Restaurantes')
-    elif menu_option == 3:
-        os.system('cls')
-        print('Ativar Restaurante')
-    else:
-        close_app()
+    match menu_option:
+        case 1:
+            os.system('cls')
+            print('Cadastrar Restaurante')
+        case 2:
+            os.system('cls')
+            print('Listar Restaurantes')
+        case 3:
+            os.system('cls')
+            print('Ativar Restaurante')
+        case 4:
+            close_app()
+        case _:
+            os.system('cls')
+            print('Opção Inválida!')
+
 
 def close_app():
     os.system('cls')
