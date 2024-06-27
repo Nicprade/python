@@ -130,3 +130,25 @@ def exercicio_4():
                 |
         """)
 
+
+main ()
+    choose_test = int(input('Qual exercício você quer testar (1 - 4):'))
+
+    match choose_test:
+        case 1:
+            os.system('cls')
+            exercicio_1()
+        case 2:
+            os.system('cls')
+            exercicio_2()
+        case 2:
+            os.system('cls')
+            exercicio_2()
+        case 4:
+            os.system('cls')
+            exercicio_4()
+        case _:
+            print('OPÇÃO INVÁLIDA')
+
+if __name__ == '__main__':
+    main()
