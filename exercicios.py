@@ -20,14 +20,113 @@ def exercicio_2():
 
     if 0 <= age <= 12:
         os.system('cls)
-        print(f.'Você é uma CRIANÇA de {age} anos')
+        print(f'Você é uma CRIANÇA de {age} anos')
     elif 13 <= age <= 18:
         os.system('cls)
-        print(f.'Você é um ADOLESCENTE de {age} anos')
+        print(f'Você é um ADOLESCENTE de {age} anos')
     else:
         os.system('cls)
-        print(f.'Você é um ADULTO de {age} anos')
+        print(f'Você é um ADULTO de {age} anos')
 
 # Exercício 3: Solicite um nome de usuário e uma senha e use uma estrutura if else para verificar se o nome de usuário e a senha fornecidos correspondem aos valores esperados determinados por você.
-
 def exercicio_3():
+    USER = nicholas.prade
+    PASSWORD = abcd12345
+
+    test_user = input('Usuário:')
+    test_password = input('Senha:')
+
+    if test_user == USER and test_password == PASSWORD:
+        print('ACESSO AUTORIZADO')
+    else:
+        print('\nUSUÁRIO ou SENHA incorretos')
+
+# Exercício 4: Solicite ao usuário as coordenadas (x, y) de um ponto qualquer e utilize uma estrutura if elif else para determinar em qual quadrante do plano cartesiano o ponto se encontra de acordo com as seguintes condições:
+# Primeiro Quadrante: os valores de x e y devem ser maiores que zero;
+# Segundo Quadrante: o valor de x é menor que zero e o valor de y é maior que zero;
+# Terceiro Quadrante: os valores de x e y devem ser menores que zero;
+# Quarto Quadrante: o valor de x é maior que zero e o valor de y é menor que zero;
+# Caso contrário: o ponto está localizado no eixo ou origem.
+
+def exercicio_4():
+    number_x = int(input('Digite o valor de X:'))
+    number_y = int(input('Digite o valor de Y:'))
+    
+    if number_x > 0 and number_y > 0:
+        print('\nEsse ponto está no PRIMEIRO QUADRANTE')
+        print("""
+                |
+          aqui  |
+                |
+        -------- --------
+                |
+                |
+                |
+        """)
+    elif number_x < 0 and number_y > 0:
+        print('\nEsse ponto está no SEGUNDO QUADRANTE')
+        print("""
+                |
+                |  aqui
+                |
+        -------- --------
+                |
+                |
+                |
+        """)
+    elif number_x < 0 and number_y < 0:
+        print('\nEsse ponto está no TERCEIRO QUADRANTE')
+        print("""
+                |
+                |
+                |
+        -------- --------
+                |
+          aqui  |
+                |
+        """)
+    elif number_x > 0 and number_y < 0:
+        print('\nEsse ponto está no QUARTO QUADRANTE')
+        print("""
+                |
+                |
+                |
+        -------- --------
+                |
+                |  aqui
+                |
+        """)
+    elif number_x = 0 and number_y != 0:
+        print('Esse ponto está SOBRE O EIXO Y')
+        print("""
+                |
+               aqui
+                |
+        -------- --------
+                |
+              ou aqui
+                |
+        """)
+    elif number_x != 0 and number_y = 0:
+        print('Esse ponto está SOBRE O EIXO X')
+        print("""
+                |
+                |
+                |
+        --aqui-- -ou aqui-
+                |
+                |
+                |
+        """)
+    else:
+        print ('Esse ponto está NA ORIGEM')
+        print("""
+                |
+                |
+                |
+        ------aqui-------
+                |
+                |
+                |
+        """)
+
