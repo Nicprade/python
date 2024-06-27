@@ -6,7 +6,7 @@ def exercicio_1():
     
     number = int(input('Digite o Número:'))
   
-    if number % 2 = 0:
+    if number % 2 == 0:
         os.system('cls')
         print(f'O número {number} é par.')
     else:
@@ -25,13 +25,13 @@ def exercicio_2():
     age = int(input('Digite sua idade:'))
 
     if 0 <= age <= 12:
-        os.system('cls)
+        os.system('cls')
         print(f'Você é uma CRIANÇA de {age} anos')
     elif 13 <= age <= 18:
-        os.system('cls)
+        os.system('cls')
         print(f'Você é um ADOLESCENTE de {age} anos')
     else:
-        os.system('cls)
+        os.system('cls')
         print(f'Você é um ADULTO de {age} anos')
 
 def exercicio_3():
@@ -166,25 +166,25 @@ def exercicio_4():
         """)
 
 
-main ()
-    print ('\nHora da prática: condicionais\n')
-    choose_test = int(input('Qual exercício você quer testar (1 - 4):'))
+def main ():
+  print ('\nHora da prática: condicionais\n')
+  choose_test = int(input('Qual exercício você quer testar (1 - 4):'))
 
-    match choose_test:
-        case 1:
-            os.system('cls')
-            exercicio_1()
-        case 2:
-            os.system('cls')
-            exercicio_2()
-        case 2:
-            os.system('cls')
-            exercicio_2()
-        case 4:
-            os.system('cls')
-            exercicio_4()
-        case _:
-            print('OPÇÃO INVÁLIDA')
+  match choose_test:
+      case 1:
+        os.system('cls')
+        exercicio_1()
+      case 2:
+        os.system('cls')
+        exercicio_2()
+      case 2:
+        os.system('cls')
+        exercicio_2()
+      case 4:
+        os.system('cls')
+        exercicio_4()
+      case _:
+        print('OPÇÃO INVÁLIDA')
 
 if __name__ == '__main__':
     main()
