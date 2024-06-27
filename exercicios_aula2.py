@@ -63,7 +63,7 @@ def exercicio_4():
     number_x = int(input('Digite o valor de X:'))
     number_y = int(input('Digite o valor de Y:'))
     
-    if number_x > 0 and number_y > 0:
+    if number_x < 0 and number_y > 0:
         print('\nEsse ponto está no PRIMEIRO QUADRANTE')
         print("""
                 |
@@ -74,7 +74,7 @@ def exercicio_4():
                 |
                 |
         """)
-    elif number_x < 0 and number_y > 0:
+    elif number_x > 0 and number_y > 0:
         print('\nEsse ponto está no SEGUNDO QUADRANTE')
         print("""
                 |
@@ -107,28 +107,52 @@ def exercicio_4():
                 |  aqui
                 |
         """)
-    elif number_x = 0 and number_y != 0:
-        print('Esse ponto está SOBRE O EIXO Y')
-        print("""
+    elif number_x == 0 and number_y != 0:
+        if number_y > 0:
+            print('Esse ponto está SOBRE O EIXO Y')
+            print("""
                 |
                aqui
                 |
         -------- --------
                 |
-              ou aqui
-                |
-        """)
-    elif number_x != 0 and number_y = 0:
-        print('Esse ponto está SOBRE O EIXO X')
-        print("""
-                |
-                |
-                |
-        --aqui-- -ou aqui-
-                |
                 |
                 |
         """)
+        else:
+            print('Esse ponto está SOBRE O EIXO Y')
+            print("""
+                |
+                |
+                |
+        -------- --------
+                |
+               aqui
+                |
+            """)
+    elif number_x != 0 and number_y == 0:
+        if number_x > 0:
+            print('Esse ponto está SOBRE O EIXO X')
+            print("""
+                |
+                |
+                |
+        -------- --aqui--
+                |
+                |
+                |
+            """)
+        else:
+            print('Esse ponto está SOBRE O EIXO X')
+            print("""
+                |
+                |
+                |
+        --aqui-- --------
+                |
+                |
+                |
+            """)
     else:
         print ('Esse ponto está NA ORIGEM')
         print("""
